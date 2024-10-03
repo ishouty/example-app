@@ -1,0 +1,40 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@helpers/*": ["helpers/*"],
+      "@layouts/*": ["components/layouts/*"],
+      "@shared/common": ["../../library/common/types/src"]
+    },
+    "jsx": "preserve",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "types": ["jest", "node"]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "../../apps/app-ui/.next/types/**/*.ts",
+    "../../dist/apps/app-ui/.next/types/**/*.ts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "src/jest-dom.d.ts" // Include this line to ensure the file is recognized
+  ],
+  "exclude": ["node_modules", "jest.config.ts", "**/*.test.ts"]
+}

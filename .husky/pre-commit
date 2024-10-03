@@ -1,0 +1,2 @@
+yarn prepare:ui
+yarn prepare:api
