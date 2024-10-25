@@ -81,19 +81,19 @@ To set up the project locally, follow these steps:
    git clone https://github.com/your-username/project-name.git
    ```
 
-2. ** Install Dependencies **
+2. **Install Dependencies **
 
 ```
 yarn
 ```
 
-3. ** Copy env **
+3. **Copy env**
 
 ```
 Copy .env.template in each mono repo api and app-ui to .env
 ```
 
-4. ** Prisma Generate & Migrate **
+4. **Prisma Generate & Migrate**
 
 To generate admin user and generate types for application. The database is local within the repo as this is for demonstration purposes.
 
